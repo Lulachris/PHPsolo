@@ -9,9 +9,11 @@
 	</head>
 <body>
 <section>
-  <p id="explo">EXPLORATEUR DE FICHIERS</p>
+  <p id="explo" style="font-family: 'Roboto';">EXPLORATEUR DE FICHIERS</p>
+  <img class="img" src="giphy.gif">
 
 </section>
+<INPUT type="button" value="Retour" onClick="window.history.back()">
 
 <?php
 $nb_fichier = 0;
@@ -26,7 +28,7 @@ if (isset($_GET['arborescence']) && $_GET['arborescence'] != '/personnel'){
         $retour = strrpos($arborescence, "/"); 
         $retour = substr($arborescence, 0, $retour); 
         echo '<p><a href="?arborescence='.$retour.'"><i class="fas fa-arrow-left fa-2x"></i></a></p>';
-        echo '<div class="arborescence">Arborescence = ' . $arborescence .'</div>';
+      
     }
 }
 else {

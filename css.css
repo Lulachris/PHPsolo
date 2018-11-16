@@ -7,11 +7,20 @@ body{
 	color:white;
 	font-family: 'Josefin Sans';
 	font-size: 30px;
-	border:solid;
+	border:;
 }
 #explo{
 color:white;
 margin: 100px;
-font-family: 'Josefin Sans';
+font-family: 'Roboto';
 font-size: 50px;
+}
+.img{
+	margin-left:500px;
+	width:600px;
+	position: absolute;
+}
+a{
+	text-decoration: none;
+	color:white;
 }
