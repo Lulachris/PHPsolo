@@ -1,5 +1,5 @@
 body{
-	background-image: url(images/old1.jpg);
+	background-image: url(images/map.jpg);
 }
 .listederoulante{
 	margin:100px;
@@ -16,11 +16,21 @@ font-family: 'Roboto';
 font-size: 50px;
 }
 .img{
-	margin-left:500px;
-	width:600px;
+	margin-left:600px;
+	width:300px;
 	position: absolute;
 }
 a{
 	text-decoration: none;
 	color:white;
+	font-family:'Century Gothic';
+}
+
+.button{
+	position: absolute;
+	font-family: 'Roboto';
+	color:brown;
+	border-color: brown;
+	width: 100px;
+	height: 60px;
 }

@@ -13,7 +13,7 @@
   <img class="img" src="giphy.gif">
 
 </section>
-<INPUT type="button" value="Retour" onClick="window.history.back()">
+<INPUT class="button" type="button" value="Retour" onClick="window.history.back()">
 
 <?php
 $nb_fichier = 0;
