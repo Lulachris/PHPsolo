@@ -8,6 +8,10 @@
 
 	</head>
 <body>
+<section>
+  <p id="explo">EXPLORATEUR DE FICHIERS</p>
+
+</section>
 
 <?php
 $nb_fichier = 0;
@@ -15,32 +19,23 @@ $dossierDemander;
 $arborescence;
 
 if (isset($_GET['arborescence']) && $_GET['arborescence'] != '/personnel'){
-    
     $arborescence = $_GET['arborescence'];
     $monchemin = "../".$arborescence;
 
     if ($arborescence != ""){
-
-        
         $retour = strrpos($arborescence, "/"); 
-
         $retour = substr($arborescence, 0, $retour); 
-        
         echo '<p><a href="?arborescence='.$retour.'"><i class="fas fa-arrow-left fa-2x"></i></a></p>';
-       
         echo '<div class="arborescence">Arborescence = ' . $arborescence .'</div>';
     }
 }
-
 else {
     $arborescence = "/Personnel";
     $monchemin = "../Personnel";
     echo '<p><a href="./"><i class="fas fa-arrow-left fa-2x"></i></a></p>';
-
-}
-
+	}
 ?>
-
+                         
 <div class="listederoulante">
 <?php
 if ($dossier = opendir($monchemin)) {
