@@ -21,8 +21,10 @@ font-size: 50px;
 	position: absolute;
 }
 a{
+	background-color: white;
+	opacity: 1;
 	text-decoration: none;
-	color:white;
+	color:black;
 	font-family:'Century Gothic';
 }
 
